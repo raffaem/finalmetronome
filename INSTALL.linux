@@ -1,0 +1,13 @@
+1) First off, you need ALL this package installed:
+
+g++ autoconf automake libtool
+
+You will also need WxWidgets libraries, version 2.8 or above. You can download wxwidgets (http://wxwidgets.org) and compile it by yourself, or (suggested) you can install this packages:
+
+libwxbase2.8-dev wx2.8-headers libwxgtk2.8-dev
+
+2) You will need FMOD. 
+Connect to http://www.fmod.org/ and download the appropriate version for your system (linux 32bit or 64 bit). You should have downloaded a tar.gz package. 
+Now open a terminal, and type "cd DIRECTORY", where DIRECTORY is the directory in wich your tar.gz package resides, and press ENTER.
+Then type "tar -xvf fmodapi*.tar.gz" and press enter (the exact name of the file depends on the version you have downloaded) 
+Then cd in the new directory where fmod resides, type "sudo make install" and press enter. This will install fmod libraries and include files in your system

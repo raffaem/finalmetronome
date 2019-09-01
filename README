@@ -1,0 +1,24 @@
+	|FinalMetronome readme file|
+	---------------------------
+
+FinalMetronome is a free and open source metronome, released under OSI approved licence
+
+You can personalized a lots of settings, and even set a background image to the window! Just take a look at data/config.xml!
+
+To find out more, please go to: http://liveformusic.sourceforge.net
+
+In the above link, you will also find a forum you can use to leave a comment, a suggestion or a bug report .
+
+Any partecipation will be appreciated :)
+
+*** UNIX/LINUX GENERAL CONSIDERATIONS ***
+
+The linux version is still experimental and in alpha stage. I cannot get MIDI work at this point jet, so for this linux release MIDI support was disabled. 
+If you want to try MIDI by yourself, open config.xml file and uncomment this line: "<file wildcard="true"> /midi_drumset/*.* </file>"
+
+*** SUPPORT ***
+
+If you need support, you can send me an email at raffamaiden@gmail.com or visit liveformusic forum at: http://sourceforge.net/apps/phpbb/liveformusic/
+You can find updated information on how to receive support at: http://liveformusic.sourceforge.net/support
+
+Thanks for your patience! :)

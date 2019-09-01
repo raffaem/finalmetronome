@@ -1,0 +1,3 @@
+POSSIBLE OUTPUT TYPES:
+autodetect - autodetect the best output driver for the system
+wavwriter - write the output into a wave file

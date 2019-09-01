@@ -1,0 +1,64 @@
++ adding feature
+- removing feature
+* fix bug
+> update library
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+08/01/2011 - version 0.0.8
++ Added INSTALL.linux help file in source distribution
++ Added a fmod_getver program. This will allow to detect the fmod version and so to build the correct library string (like libfmodex-4.32.06.so) without user intervention. Before it was necessary to hardcode the fmod version in src/Makefile.am
++ Added ogg_drumset with the midi files encoded as ogg for all platform. Removed midi_drumset folder (ogg files are playable easier on linux. ogg files are now also default on windows)
+* Window background image drawing was broken (a code commented out for debug purpose was still commented out)
+
+21/08/2010 - version 0.0.7
++ POSIX timer implementation
++ Add RPATH using the -rpath option
+* Segmentation fault at program termination
+* Errors while calling GUI functions from other threads (custom events implemented instead)
+* Numerous of bugs fixed
+
+24/05/2010 - Version 0.0.6
++ First linux version using the autotools suite
+
+18/04/2010 - Version 0.0.5
++ Full support for Unicode added
++ Windows only: change process priority to above normal
++ Implemented output type selection in the xml config file
++ Implemented "Tap tempo" button
++ Added a "silent sound" named "No sound". This will allow to play no sounds at a beat, so this will allow to set pauses
++ In the beat map, it is now possible to select multiple beats and change them all simultaneously
++ Changes in config.xml, see it for deatils
++ Implemented beat subdivisions, in the beat map these are named properly
++ Name changed to Final Metronome, because another project was already named Open Metronome and it was born before this project. This will avoid confusion, also for the search engines
++ Update the "Beats per minutes" option now update the beat map window also, if it is opened
+
+15.26 09/04/2010 - Version 0.0.4
++ Created a version that do not need the Base Pack. This version is compiled under MingW and the executable is then compressed with UPX (--best option)
++ A sound->beat map implemented with a button and a window that show it and allow its modification. Now you can select a different sound for every different beat (of course multiple different beats can share the same sound)
++ Licence changed from LGPL to GPL
++ Changed sound->accents to sounds->data in config file. Subnodes changed as well. Now the amount of sound files you can load are limited only by your system memory (in the previous version, only 2  audio files can be loaded)
++ Improved FMOD initialization sequence. Useful expecially on Windows platforms.
++ Put some midi files with common drums sound in a data/midi_drumset folder
++ High resolution timer implemented (Windows only)
+* FMOD would return a file not found error if the sound path string contained space at the beginning or at the end
+
+17.14 03/04/2010 - Version 0.0.3
+* "Beats in a measure" was initialized to 1. Workaround applied, need to investigate more on this, thought
+* Audio stopped playing after some time
+* Tempos wich were not pair caused the metronome animation to work incorrectly
++ Changed version numbering scheme to x.x.x
++ Use new Base Pack 0.2
+
+19.37 02/04/2010 - Version 0.0.2
++ Switched to FMOD Ex
++ Removed the dlls that are now in the base pack
+
+11/03/2010 - Version 0.0.1
++ Implemented drawing of a background bitmap in the window
++ Clean up code
++ New XML parser, more linear
+* Better error handling to windowAnimation::applyFrame. No more crash if frames are not loaded
++ XML parser now based on wxWidgets and no more on tinyXML
+
+28/02/2010
++ First commit to SVN
